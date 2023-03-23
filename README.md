@@ -15,6 +15,19 @@ A basic JSend-compliant response is as simple as this:
      }
 }
 ```
+
+A basic JSend-compliant response with pagination
+```
+{
+    status : "success",
+    data : {
+        "posts" : [{ "id" : 1, "title" : "A blog post", "body" : "Some useful content" }],
+        "page": 1,
+        "count": 10,
+        "total": 100
+     }
+}
+```
 When setting up a JSON API, you'll have all kinds of different types of calls and responses. JSend separates responses into some basic types, and defines required and optional keys for each type:
 
 <table>
